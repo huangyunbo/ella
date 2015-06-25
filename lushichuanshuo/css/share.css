@@ -22,10 +22,11 @@ body{ background:#191817}
 .card{ overflow:hidden; color:#fff}
 .card .item{ float:left; width:50%; padding:0 7.5px; margin-bottom:3px; box-sizing:border-box}
 .card .inner{ background:#31302e; position:relative; height:18px; overflow:hidden}
-.card .item .num{ width:8px; height:14px; line-height:14px; text-align:center; background:#2a91ff; position:absolute; left:8px; top:2px; font-size:1.2rem; z-index:3} 
+.card .item .num{ width:8px; height:14px; line-height:14px; text-align:center; background:#2a91ff; position:absolute; left:8px; top:2px; font-size:1.2rem; z-index:3; font-family:Arial} 
+.card .item .num_two em{ transform:scale(0.883); -webkit-transform:scale(0.883); display:block; z-index:4; position:relative; left:-3px}
 .card .item .num:before{ content:""; position:absolute; top:0; left:-4px; width:0; height:0; border-top:7px solid transparent; border-right:4px solid #2a91ff; border-bottom:7px solid transparent}
 .card .item .num:after{ content:""; position:absolute; top:0; right:-4px; width:0; height:0; border-top:7px solid transparent; border-left:4px solid #2a91ff; border-bottom:7px solid transparent}
-.card .item span{ color:#fde69f; font-size:1.2rem; transform:scale(0.833); -webkit-transform:scale(0.833); position:absolute; left:18px; top:0; z-index:4; white-space:nowrap}
+.card .item span{ color:#fde69f; font-size:1.2rem; transform:scale(0.833); -webkit-transform:scale(0.833); position:absolute; left:18px; top:0; z-index:5; white-space:nowrap}
 .card .item img{ width:54px; position:absolute; right:0; top:0}
 .card .item i{ width:10px; position:absolute; right:44px; top:0; bottom:0; background:linear-gradient(left, #31302e, transparent); background:-webkit-linear-gradient(left, #31302e, transparent); z-index:2}
 
@@ -37,7 +38,7 @@ body{ background:#191817}
 .footer .count .list li{ display:table-cell; width:12.5%}
 .footer .count .bar{ height:70px; background:#191918; margin:0 3px; position:relative}
 .footer .count .bar i{ width:100%; background:#ffd957; position:absolute; bottom:0; left:0}
-.footer .count .num{ width:8px; height:14px; line-height:14px; background:#2a91ff; position:relative; font-size:1.2rem; display:inline-block; margin:3px 0 7px; color:#fff} 
+.footer .count .num{ width:8px; height:14px; line-height:14px; background:#2a91ff; position:relative; font-size:1.2rem; display:inline-block; margin:3px 0 7px; color:#fff; font-family:Arial} 
 .footer .count .num:before{ content:""; position:absolute; top:0; left:-4px; width:0; height:0; border-top:7px solid transparent; border-right:4px solid #2a91ff; border-bottom:7px solid transparent}
 .footer .count .num:after{ content:""; position:absolute; top:0; right:-4px; width:0; height:0; border-top:7px solid transparent; border-left:4px solid #2a91ff; border-bottom:7px solid transparent}
 .footer .count .num span{ position:relative; z-index:3}
@@ -55,7 +56,8 @@ body{ background:#191817}
 	.header h1{ font-size:2.4rem}
 	.card .item{ margin-bottom:6px}
 	.card .inner{ height:36px}
-	.card .item .num{ width:16px; height:28px; line-height:28px; left:16px; top:4px; font-size:2.4rem} 
+	.card .item .num{ width:16px; height:28px; line-height:28px; left:16px; top:4px; font-size:2.4rem}
+	.card .item .num_two em{ transform:scale(1); -webkit-transform:scale(1); position:static; font-size:1.4rem}
 	.card .item .num:before{ left:-8px; border-width:14px 8px 14px 0}
 	.card .item .num:after{ right:-8px; border-width:14px 0 14px 8px}
 	.card .item span{ font-size:2rem; transform:scale(1); -webkit-transform:scale(1); left:46px; top:3px}
