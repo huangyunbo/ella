@@ -98,8 +98,51 @@
                 炉石传说app攻略
             </div>
         </div>
-        <a class="download">点击下载</a>
+        <a class="download" id="download">点击下载</a>
     </div>
 </div><!--/footer-->
+
+<a class="wxguide" id="wxguide">
+	<div class="text">微信用户若不能下载，请点击右上角的&middot;&middot;&middot;，选择『在Safari中打开』即可正常跳转。<p>——爱你的玩吧攻略 - for 炉石传说</p></div>
+    <div class="text">玩吧攻略安卓版正在拼命开发中，即将上线，敬请期待！<p>——爱你的玩吧攻略 - for 炉石传说</p></div>
+</a>
+
+
+<script type="text/javascript">
+function isWeixin(){
+	var ua = navigator.userAgent.toLowerCase();
+	if (ua.match(/MicroMessenger/i) == "micromessenger") {
+		return true;
+	}else{
+		return false;
+	}
+}
+function isAndroid(){
+	return (navigator.userAgent.toLowerCase().indexOf('android') >= 0);
+}
+
+var $download = document.getElementById("download"),
+	$wxguide = document.getElementById("wxguide"),
+	$wxguide_ios = $wxguide.getElementsByTagName("div")[0],
+	$wxguide_android = $wxguide.getElementsByTagName("div")[1];
+
+$download.addEventListener("click",function(){
+	if(isAndroid()){
+		$wxguide.style.display = "block";
+		$wxguide_android.style.display = "block";
+	}else{
+		if(isWeixin()){
+			$wxguide.style.display = "block";
+			$wxguide_ios.style.display = "block";
+		}else{
+			this.setAttribute('href', 'https://itunes.apple.com/cn/app/wan-ba-gong-e-for-lu-shi-chuan/id756126892?mt=8');
+		}
+	}
+},false);
+
+$wxguide.addEventListener("click",function(){
+	this.style.display = "none";
+},false);
+</script>
 </body>
 </html>

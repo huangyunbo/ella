@@ -77,7 +77,8 @@ body{ background:#191817}
 	.footer .more .logo{ width:80px; height:80px; background:url(../images/share.jpg) no-repeat; margin-right:20px}
 	.footer .more .r{ vertical-align:4px; font-size:2.2rem}
 	.footer .more .r div{ font-size:3rem}
-	.footer .more .download{ width:291px; height:93px; line-height:105px; background:url(../images/share.jpg) -80px 0 no-repeat; font-size:3rem}
-
+	.footer .more .download{ width:291px; height:93px; line-height:105px; background:url(../images/share.jpg) -80px 0 no-repeat; font-size:3rem; cursor:pointer}
 }
-
+.wxguide{ width:100%; height:100%; position:fixed; z-index:9000; top:0; left:0; background:rgba(0,0,0,0.8); overflow:hidden; display:none; cursor:pointer}
+.wxguide .text{ color:#fff; font-size:1.6em; margin:50px 20px 0; display:none}
+.wxguide .text p{ text-align:right; margin-top:3px}
