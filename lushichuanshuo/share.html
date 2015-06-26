@@ -103,6 +103,7 @@
 </div><!--/footer-->
 
 <a class="wxguide" id="wxguide">
+	<i class="arrow"></i>
 	<div class="text">微信用户若不能下载，请点击右上角的&middot;&middot;&middot;，选择『在Safari中打开』即可正常跳转。<p>——爱你的玩吧攻略 - for 炉石传说</p></div>
     <div class="text">玩吧攻略安卓版正在拼命开发中，即将上线，敬请期待！<p>——爱你的玩吧攻略 - for 炉石传说</p></div>
 </a>
@@ -123,6 +124,7 @@ function isAndroid(){
 
 var $download = document.getElementById("download"),
 	$wxguide = document.getElementById("wxguide"),
+	$wxguide_arrow = $wxguide.getElementsByTagName("i")[0],
 	$wxguide_ios = $wxguide.getElementsByTagName("div")[0],
 	$wxguide_android = $wxguide.getElementsByTagName("div")[1];
 
@@ -133,6 +135,7 @@ $download.addEventListener("click",function(){
 	}else{
 		if(isWeixin()){
 			$wxguide.style.display = "block";
+			$wxguide_arrow.style.display = "block";
 			$wxguide_ios.style.display = "block";
 		}else{
 			this.setAttribute('href', 'https://itunes.apple.com/cn/app/wan-ba-gong-e-for-lu-shi-chuan/id756126892?mt=8');
