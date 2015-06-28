@@ -37,7 +37,13 @@ body{ background:#191817}
 .footer .count .list{ display:table; width:100%}
 .footer .count .list li{ display:table-cell; width:12.5%}
 .footer .count .bar{ height:70px; background:#191918; margin:0 3px; position:relative}
-.footer .count .bar i{ width:100%; background:#ffd957; position:absolute; bottom:0; left:0}
+.footer .count .bar i{ width:100%; position:absolute; bottom:0; left:0; height:0%; transform:rotateX(180deg); -webkit-transform:rotateX(180deg)}
+.footer .count .bar i code{ width:100%; height:100%; background:#ffd957; -webkit-animation:bar 2s linear 0s 1 normal; display:block}
+@-webkit-keyframes bar{
+	0%{ height:0%}
+	50%{ height:0%}
+	100%{ height:100%}
+}
 .footer .count .num{ width:8px; height:14px; line-height:14px; background:#2a91ff; position:relative; font-size:1.2rem; display:inline-block; margin:3px 0 7px; color:#fff; font-family:Arial} 
 .footer .count .num:before{ content:""; position:absolute; top:0; left:-4px; width:0; height:0; border-top:7px solid transparent; border-right:4px solid #2a91ff; border-bottom:7px solid transparent}
 .footer .count .num:after{ content:""; position:absolute; top:0; right:-4px; width:0; height:0; border-top:7px solid transparent; border-left:4px solid #2a91ff; border-bottom:7px solid transparent}
