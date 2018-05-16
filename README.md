@@ -1,6 +1,6 @@
-# 玩吧H5分享
+# 玩吧H5分享Demo
 
-这是玩吧的H5分享
+这是玩吧多应用的H5分享Demo
 
 ## 目录
 * [v2.4](https://github.com/huangyunbo/ella/tree/master/v2.4) (是2.4版本的玩吧APP内部打开H5，app会加载html文件，替换中间的##之间的内容)
